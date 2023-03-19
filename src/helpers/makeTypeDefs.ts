@@ -1,5 +1,4 @@
-import { gql } from "apollo-server-express";
-import { DMMF } from "@prisma/client/runtime";
+import { DMMF } from "@prisma/generator-helper";
 
 export const makeTypeDefs = (dmmf: DMMF.Document) => {
   const enums = [
@@ -36,7 +35,7 @@ export const makeTypeDefs = (dmmf: DMMF.Document) => {
       `;
   });
 
-  return gql`
+  return `
     scalar Any
     scalar DateTime
     scalar Json

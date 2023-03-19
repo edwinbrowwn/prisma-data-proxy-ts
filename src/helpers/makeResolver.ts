@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client/scripts/default-index";
-import { DMMF } from "@prisma/client/runtime";
+import { DMMF } from "@prisma/generator-helper";
 import { SelectionNode } from "graphql";
 import { IFieldResolver } from "@graphql-tools/utils";
 
